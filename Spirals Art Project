@@ -1,0 +1,19 @@
+import turtle
+turtle.dot(10000, "black")
+turtle.speed(0) 
+x = 0
+turtle.color("Red")
+def spiral(length):
+  for i in range(1000):
+    turtle.forward(length)
+    turtle.right(98)
+    length = length + 1
+def manyspirals():  
+  spiral(100)
+  turtle.color("blue")
+  spiral(50)
+  turtle.color("green")
+  spiral(24)
+  turtle.color("violet")
+  spiral(55)
+manyspirals()
